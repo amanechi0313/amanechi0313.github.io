@@ -1,0 +1,272 @@
+/*whole top and nav*/
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 4;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    
+}
+nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+   }
+
+
+
+
+/*left-side logo*/
+.logo{
+    align-self:center;
+    width: 20%;
+
+}
+
+.logo_pic{
+    width: 156.4px;
+    height: 61.2px; 
+    align-self:center;
+    padding-left: 4rem;
+}
+
+/*middle text menu*/
+.menu{
+    
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 55%;
+}
+
+.menu ul li {
+    -webkit-transition: all 0.2s;
+	        transition: all 0.2s;
+}
+
+.menu li{
+    float:left;
+    cursor: pointer;
+    color: #FFB4AE;
+    font-size: 25px;
+    padding: 20px 30px;
+    text-align: center;
+
+}
+
+.menu li span{
+    border-bottom: 1px transparent;
+    margin: 0px 0px 0px 3px;
+    transition: 300ms;
+}
+
+.menu li span:hover{
+    border-bottom: 3px solid #FFB4AE;
+    margin: 0px 0px 0px 3px;
+    opacity: 0.7;
+}
+
+.menu .drop_down{
+    display: none;
+}
+
+.menu .drop_down:hover{
+    display: block;
+    
+}
+
+
+
+
+/* little icon,fb,tw,yt etc..*/
+.icon{
+    float:inline-end;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+}
+.icon img{
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+}
+/*language selector*/
+.language{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 5%;
+    padding-right: 2rem;
+}
+.language select{
+    background-color: transparent;
+	width: 90%;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+.language select option{
+    background-color: transparent;
+}
+
+
+.wrap{
+    
+    width: 100%;
+    height: 400vh;
+    background: transparent linear-gradient(180deg, #FFB4AE 0%, #FFC69F 100%) 0% 0% no-repeat padding-box;
+    border: 0x;
+    opacity: 1;
+}
+
+.new_post .twitter_post .aboutMe_f .aboutMe_b .title{
+    float: left;
+}
+
+.wrap .title{
+    position: relative;
+    top: 25vh;
+    left: 15vh;
+    height: 70vh;
+    width: 80vw;
+}
+
+.wrap .title p{
+    color: white;
+    font-size: 170px;
+    text-align: left;
+    line-height: 200px;
+}
+
+.wrap .play_btn{
+    position: absolute;
+    left: 46%;
+    top: 5%;
+    transform: translate(-50%, 0);
+}
+
+/*new article*/
+.wrap .new_post{
+    position: absolute;
+    height: 73vh;
+    width: 32vw;
+    background-color: rgb(39, 39, 39);
+    top: 110vh;
+    left: 15vw;
+    z-index: 2;
+
+}
+
+
+.wrap .new_post .text_wrap{
+    padding: 70px 30px 20px 45px;
+    line-height: 48px;
+    
+}
+
+.wrap .new_post .text_wrap .article{
+    font-size: 22px;
+    color: rgb(55, 153, 218);
+    padding-left: 20px;
+}
+.wrap .new_post .text_wrap .new{
+    font-size: 22px;
+    color: rgb(255, 247, 142);
+}
+.wrap .new_post .text_wrap .note{
+    font-size: 22px;
+    color: rgb(255, 147, 147);
+}
+.wrap .new_post .text_wrap .kanso{
+    font-size: 22px;
+    color: rgb(190, 253, 184);
+}
+.wrap .new_post .text_wrap .hoka{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.text_line{
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    border-left:5px solid rgb(27, 88, 37);
+}
+.news_logo{
+    position: absolute;
+    top: 105vh;
+    left: 22vw;
+    z-index: 3;
+    -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.6));   
+}
+
+
+
+/*Twitter*/
+
+.wrap .twitter_post{
+    position: absolute;
+    overflow: scroll;
+    height: 73vh;
+    width: 32vw;
+    background-color: aliceblue;
+    top: 110vh;
+    right: 15vw;
+    z-index: 2;
+}
+.twitter_logo{
+    position: absolute;
+    top: 105vh;
+    right: 17vw;
+    z-index: 3;
+    -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.6));   
+
+}
+.wrap .big_pic{
+    position: absolute;
+    top: 15vh;
+    right: 15vw;
+    z-index: 1;
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+}
+
+section{
+    position: absolute;
+    top: 300vh;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    z-index: 4;
+
+}
+
+
+
+footer{
+    position: relative;
+    bottom: 0vh;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(80, 79, 79, 0.5);
+}
+
+footer p{
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+/* test here */

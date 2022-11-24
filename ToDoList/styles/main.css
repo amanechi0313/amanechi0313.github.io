@@ -1,0 +1,163 @@
+body{
+    background: linear-gradient(45deg, #FFB4AE 0%, #FFC69F 100%,#efff9f 30%) ;
+    background: -webkit-linear-gradient(45deg, #FFB4AE 0%, #FFC69F 100%,#efff9f 30%) ;
+    animation: AnimeGrade 10s ease infinite;
+    background-size: 600% 600%;
+}
+
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: bolder;
+    text-shadow: #00000079 5px 5px;
+    
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,button{
+    border: none;
+    position: relative;
+    /*問村人要怎樣不讓它抖!!!!*/
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+    margin: 0.1rem;
+}
+
+form input{
+    border: 1px solid rgba(255, 255, 255, 0);
+	outline: none;
+	box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0);  
+    /*設透明的線讓它不會飄*/
+}
+
+
+form input:focus{
+    border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 0px 1px rgba(218,60,65, .5);
+}
+
+form input[type="number"]{
+    width: 50px;
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form button{
+    cursor: pointer;
+    background-color: white;
+    color: #FFC69F;
+    border: 1px solid rgba(255, 255, 255, 0);
+	outline: none;
+	box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0); 
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #c4865d;
+    color: white;
+    transition: 1s;    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .todo{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+    transition: all 0.5s ease;
+}
+section .todo p{
+    background-color: white;
+    color: black;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.70rem;
+}
+
+section .done{
+    opacity: 0.6;
+    filter: invert(1);
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+}
+
+section .todo p.todo-text{
+    width: 55%;
+}
+section .todo p.todo-time{
+    width: 25%;
+    text-align: center;
+}
+
+section .complete , .trash{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.7rem;
+    align-self: flex-end;
+    width: 2.3rem;
+    height: 2.3rem;
+    border:  none;
+    cursor: pointer;
+    align-items: center;
+}
+
+section .complete{
+    background-color: #b6d6a8;
+}
+
+section .trash{
+    background-color: #ff7b7b;
+}
+
+img{
+    pointer-events: none;
+}
+
+@keyframes scaleUp{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleDown{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+}
